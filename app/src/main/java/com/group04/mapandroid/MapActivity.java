@@ -40,8 +40,8 @@ public class MapActivity extends AppCompatActivity implements OnMapReadyCallback
     public void onMapReady(@NonNull GoogleMap googleMap) {
         this.gMap = googleMap;
 
-        LatLng mapChanh = new LatLng(12.580153, 107.860202);
-        this.gMap.addMarker(new MarkerOptions().position(mapChanh).title("Marker in nhà Chánh"));
-        this.gMap.moveCamera(CameraUpdateFactory.newLatLng(mapChanh));
+        LatLng nhaToi = new LatLng(10.786316, 106.678339);
+        this.gMap.addMarker(new MarkerOptions().position(nhaToi).title("Nhà của tôi"));
+        this.gMap.moveCamera(CameraUpdateFactory.newLatLng(nhaToi));
     }
 }

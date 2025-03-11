@@ -39,10 +39,10 @@ public class ChangeMarkerActivity extends AppCompatActivity implements OnMapRead
     public void onMapReady(@NonNull GoogleMap googleMap) {
         this.gMap = googleMap;
 
-        LatLng mapChanh = new LatLng(12.580153, 107.860202);
-        this.gMap.moveCamera(CameraUpdateFactory.newLatLng(mapChanh));
+        LatLng nhaToi = new LatLng(10.786316, 106.678339);
+        this.gMap.moveCamera(CameraUpdateFactory.newLatLng(nhaToi));
 
-        MarkerOptions options = new MarkerOptions().position(mapChanh).title("Marker in nhà Chánh");
+        MarkerOptions options = new MarkerOptions().position(nhaToi).title("Nhà của tôi");
         options.icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_MAGENTA));
         this.gMap.addMarker(options);
     }
